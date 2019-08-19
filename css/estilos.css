@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url(DancingScript-Regular.ttf);
+}
+
+body{
+  font-family: 'Dancing Script';
+}
+header{
+  background-color: #5b7989;
+  color: white;
+  text-shadow: #02010a 2px 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 12px;
+}
+
+nav{
+  float: right;
+  text-shadow: none;
+  padding-right: 12px;
+}
+
+nav>a{
+  padding: 8px;
+}
+.index{
+  text-decoration: none;
+}
