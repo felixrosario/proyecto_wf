@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url(DancingScript-Regular.ttf);
+}
+
+body{
+  font-family: 'Dancing Script';
+}
+
+@media (min-width: 900px) {
+     .contenido{
+       width: 900px;
+       margin: auto;
+     }
+   }
+
+@media (max-width: 900px) {
+    .contenido{
+     width: 100%;
+    }
+}
+
+@keyframes header {
+0% {
+margin-top: 150%;
+}
+60% {
+-5%
+}
+100% {
+0%
+}
+}
+
+.header{
+  background-color: #5b7989;
+  color: white;
+  text-shadow: #02010a 2px 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 12px;
+  padding: 12px 12px;
+  animation-name: header;
+  animation-duration: 1s;
+}
+.nav{
+  float: right;
+  text-shadow: none;
+  padding-right: 12px;
+}
+
+.nav>a{
+  padding: 8px;
+}
+
+
+.retratos{
+  text-decoration: none;
+}
+
+.divimagen_retratos{
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction:row;
+
+}
+
+.divimagen_retratos>p{
+  width: 33.33%;
+}
+
+.retrato1{
+  filter: blur(10px);
+  width: 90%;
+}
+
+.retrato2, .retrato3, .retrato6{
+  filter: grayscale(100%);
+  width: 90%;
+  box-shadow: 2px 2px;
+}
+
+.retrato5{
+  filter: sepia(90%);
+  width: 90%;
+  box-shadow: 2px 2px;
+}
+
+.retrato4{
+  width: 90%;
+  box-shadow: 2px 2px;
+}
+
+
+
+
+
+
+.footer{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer>p{
+  width: 25%;
+}
+.boton_fb, .boton_tw, .boton_ins{
+  width: 10%;
+}

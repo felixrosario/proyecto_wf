@@ -7,7 +7,18 @@ body{
   font-family: 'Dancing Script';
 }
 
+@media (min-width: 900px) {
+     .contenido{
+       width: 900px;
+       margin: auto;
+     }
+   }
 
+@media (max-width: 900px) {
+    .contenido{
+     width: 100%;
+    }
+}
 
 
 @keyframes header {
@@ -45,51 +56,42 @@ margin-top: 150%;
 }
 
 
-.index{
+.paisajes{
   text-decoration: none;
 }
 
-.divimagen_central{
-  background-color: #82c3a6;
-  padding: 12px 12px;
 
-}
-
-.imagencentral{
-  width: 50%;
-  margin: 0 auto;
-  display: block;
-  box-shadow: 2px 2px;
-}
-
-.divimagen_secundaria{
+.divimagen_paisajes{
   background-color: #d5c75f;
   display: flex;
   flex-direction:row;
-  padding: 30px;
-  text-align: center;
+
 }
 
-.imagensecizq{
-width: 100%;
-margin-right: 20px;
-border: 2px;
-box-shadow: 2px 2px #82c3a6;
+.divimagen_paisajes>p{
+  width: 33.33%;
 }
 
-.imagensecizq:hover{
-  transform: rotate(10deg);
+.paisaje1{
+  filter: blur(10px);
+  width: 90%;
 }
 
-.imagensecder{
-width: 100%;
-margin-left: 20px;
-border: 2px;
-box-shadow: 2px 2px #82c3a6;
+.paisaje2, .paisaje3, .paisaje6{
+  filter: grayscale(100%);
+  width: 90%;
+  box-shadow: 2px 2px;
 }
 
-.imagensecder:hover{
-transform: translate(20px, -5px);
+.paisaje5{
+  filter: sepia(90%);
+  width: 90%;
+  box-shadow: 2px 2px;
+}
+
+.paisaje4{
+  width: 90%;
+  box-shadow: 2px 2px;
 }
 
 .footer{
@@ -105,28 +107,4 @@ transform: translate(20px, -5px);
 }
 .boton_fb, .boton_tw, .boton_ins{
   width: 10%;
-}
-
-@media (min-width: 900px) {
-     .contenido{
-       width: 900px;
-       margin: auto;
-     }
-   }
-
-@media (max-width: 360px) {
-    .contenido{
-     width: 100%;
-    }
-    .header{
-      padding-bottom: 15%;
-      text-align: center;
-    }
-    .nav{
-      text-align: center;
-    }
-    .divimagen_secundaria{
-      display: flex;
-      flex-direction: column;
-    }
 }
