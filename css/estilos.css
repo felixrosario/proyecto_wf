@@ -8,8 +8,6 @@ body{
 }
 
 
-
-
 @keyframes header {
 0% {
 margin-top: 150%;
@@ -114,7 +112,7 @@ transform: translate(20px, -5px);
      }
    }
 
-@media (max-width: 360px) {
+@media (max-width: 246px) {
     .contenido{
      width: 100%;
     }
@@ -125,8 +123,22 @@ transform: translate(20px, -5px);
     .nav{
       text-align: center;
     }
+    .imagencentral{
+      width: 100%;
+    }
     .divimagen_secundaria{
       display: flex;
       flex-direction: column;
+      padding: 12px 12px;
+    }
+    .imagensecder{
+      margin-left: 0px;
+    }
+    .footer{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer>p{
+      width: 100%
     }
 }
